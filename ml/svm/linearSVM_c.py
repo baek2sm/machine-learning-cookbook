@@ -21,7 +21,7 @@ X_train_std = scaler.fit_transform(X_train)
 X_test_std = scaler.transform(X_test)
 
 # 선형 서포트 벡터 머신 모델 객체를 만듭니다.
-classifier = LinearSVC(C=1.0)
+classifier = LinearSVC()
 
 # 그리드 서치를 정의합니다.
 param_grid = [{'C': np.arange(0.1, 1.1, 0.1)}]
